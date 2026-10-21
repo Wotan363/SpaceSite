@@ -5,7 +5,6 @@ node_modules/
 *.log
 
 # Generated SQLite databases and sidecar files
-*.db
 *.db-journal
 *.db-wal
 *.db-shm
