@@ -1,0 +1,211 @@
+{
+  "info": {
+    "name": "SpaceSite Books API",
+    "description": "Books browsing, filters, search, and validation examples. Start the backend before sending requests.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000",
+      "type": "string"
+    },
+    {
+      "key": "bookId",
+      "value": "1",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Get all books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books",
+        "description": "Returns all books."
+      },
+      "response": []
+    },
+    {
+      "name": "Get selected book",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books/{{bookId}}",
+        "description": "Returns one book. Change the bookId collection variable to select another book."
+      },
+      "response": []
+    },
+    {
+      "name": "Get book reviews",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books/{{bookId}}/reviews",
+        "description": "Returns username, rating, and comment for each review. An existing book without reviews returns []."
+      },
+      "response": []
+    },
+    {
+      "name": "Get all genres",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books/genres",
+        "description": "Returns unique genres."
+      },
+      "response": []
+    },
+    {
+      "name": "Get all series",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books/series",
+        "description": "Returns unique nonempty series."
+      },
+      "response": []
+    },
+    {
+      "name": "Filter by genre",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books?genre=Fantasy",
+        "description": "Exact genre filter; use a genre from the genres endpoint."
+      },
+      "response": []
+    },
+    {
+      "name": "Filter by series",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books?series=Dune",
+        "description": "Exact series filter; use a series from the series endpoint."
+      },
+      "response": []
+    },
+    {
+      "name": "Filter by genre and series",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/books?genre=Science%20Fiction&series=Dune",
+        "description": "Returns books matching both filters."
+      },
+      "response": []
+    },
+    {
+      "name": "Search",
+      "item": [
+        {
+          "name": "Search by title",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/search?q=Dune",
+            "description": "Searches title, author, series, and ISBN for this term."
+          },
+          "response": []
+        },
+        {
+          "name": "Search by author",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/search?q=Herbert",
+            "description": "Searches all four fields with a partial author name."
+          },
+          "response": []
+        },
+        {
+          "name": "Search by series",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/search?q=Dune",
+            "description": "Searches all four fields with a series name."
+          },
+          "response": []
+        },
+        {
+          "name": "Search by ISBN",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/search?q=9780441172719",
+            "description": "Searches all four fields with an ISBN. Replace with an ISBN from your database."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Validation examples",
+      "item": [
+        {
+          "name": "Invalid book ID (400)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/abc",
+            "description": "Expected HTTP 400."
+          },
+          "response": []
+        },
+        {
+          "name": "Missing book (404)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/9007199254740991",
+            "description": "Expected HTTP 404 if this ID does not exist."
+          },
+          "response": []
+        },
+        {
+          "name": "Empty search (400)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/search?q=",
+            "description": "Expected HTTP 400."
+          },
+          "response": []
+        },
+        {
+          "name": "Empty series filter (400)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books?series=",
+            "description": "Expected HTTP 400."
+          },
+          "response": []
+        },
+        {
+          "name": "Reviews invalid book ID (400)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/abc/reviews",
+            "description": "Expected HTTP 400."
+          },
+          "response": []
+        },
+        {
+          "name": "Reviews missing book (404)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/api/books/9007199254740991/reviews",
+            "description": "Expected HTTP 404 if this book does not exist."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

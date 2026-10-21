@@ -1,0 +1,135 @@
+title;author;genre;isbn;series
+The Official Raspberry Pi Handbook 2025;The Makers of the MagPi magazine;Computer Science & Technology;;
+Make Games with Python;Sean M. Tracey;Computer Science & Technology;;
+An Introduction to C & GUI Programming;Simon Long;Computer Science & Technology;;
+The Official Raspberry Pi Beginners Guide 6th Edition;Gareth Halfacree;Computer Science & Technology;;
+AI Projects with Raspberry Pi;Lucy Hattersley and Brian Jepson;Computer Science & Technology;;
+Design an RP2040 board with KiCad;Ben Everard, Jo Hinchliffe;Computer Science & Technology;;
+Simple electronics with GPIO Zero;Phil King;Computer Science & Technology;;
+Learning Kali Linux;Ric Messier;Computer Science & Technology;;
+Learning Modern Linux;Michael Hausenblas;Computer Science & Technology;;
+Git Pocket Guide;Richard E. Silverman;Computer Science & Technology;;
+Practical Linux System Administration;Kenneth Hess;Computer Science & Technology;;
+Linux Pocket Guide;Daniel J. Barrett;Computer Science & Technology;;
+Understanding the Linux Kernel, 3rd Edition;Daniel P.Bovet and Marco Cesati;Computer Science & Technology;;
+Linux System Programming;Robert Love;Computer Science & Technology;;
+Version Control with Git;Prem Kumar Ponuthorai and Jon Loeliger;Computer Science & Technology;;
+Git for Teams;Emma Jane Hogbin Westby;Computer Science & Technology;;
+Efficient Linux at the Command Line;Daniel J. Barrett;Computer Science & Technology;;
+Learning Git;Anna Skoulikari;Computer Science & Technology;;
+Kubernetes: Up and Running;Brendan Burns Joe Beda Kelsey Hightower and Lachlan Evenson;Computer Science & Technology;;
+Network Programmability and Automation;Christian Adell Scott S. Lowe Matt Oswalt;Computer Science & Technology;;
+Hands-On Red Team Tactics;Himanshu Sharma;Computer Science & Technology;;
+Cybersecurity Blue Team Strategies;Kunal Sehgal, Nikolaos Thymianis;Computer Science & Technology;;
+Adversarial AI Attacks, Mitigations, and Defense Strategies;John Sotiropoulos;Computer Science & Technology;;
+The Ultimate Kali Linux Book;Glen D. Singh;Computer Science & Technology;;
+Mastering Microsoft Defender for Office 365;Samuel Soto;Computer Science & Technology;;
+Advanced Cyber Threat Intelligence and Hunting;Gianluca Tiepolo Dan Sorensen;Computer Science & Technology;;
+Digital Forensics Cookbook;Cody Bounds;Computer Science & Technology;;
+Attacking and Exploiting Modern Web Applications;Simone Onofri and Donato Onofri;Computer Science & Technology;;
+Defending APIs;Colin Domoney;Computer Science & Technology;;
+Cybersecurity – Attack and Defense Strategies;Yuri Diogenes Erdal Ozkaya;Computer Science & Technology;;
+Microsoft Defender for Identity in Depth;Pierre Thoor;Computer Science & Technology;;
+Incident Response Techniques for Ransomware Attacks;Oleg Skulkin;Computer Science & Technology;;
+Microsoft Defender for Endpoint Depth;Paul Snow Ru Champbell Ian Hoyle Joe Anich Justen Graves;Computer Science & Technology;;
+Cybersecurity Attacks – Red Team Strategies;Johann Rehberger;Computer Science & Technology;;
+Mastering Microsoft 365 Defender;Ru Campbell Viktor Hedberg;Computer Science & Technology;;
+Zed Attack Proxy Cookbook;Ryan Soper Nestor N Torres Ahmed Almoailu;Computer Science & Technology;;
+Practical Threat Intelligence and Data-Driven Threat Hunting;Valentina Palacin;Computer Science & Technology;;
+Mastering Palo Alto Networks 3rd Edition;Tom Piens aka reaper;Computer Science & Technology;;
+Malware Development for Ethical Hackers;Zhassulan Zhussupov;Computer Science & Technology;;
+Agentic AI for Offensive Cybersecurity;Orhan Yildirim;Computer Science & Technology;;
+Cybersecurity Architects Handbook;Lester Nichols;Computer Science & Technology;;
+PowerShell Automation and Scripting for Cybersecurity;Miriam C. Wiesner;Computer Science & Technology;;
+Unified SecOps Playbook;Jose Lazaro Marcus Burnap;Computer Science & Technology;;
+Microsoft Security Copilot;Bi Yue Xu Rod Trent;Computer Science & Technology;;
+Practical Threat Detection Engineering;Megan Roddie Jason Deyalsingh Gary J. Katz;Computer Science & Technology;;
+Kali Linux Cookbook;Corey P. Schultz;Computer Science & Technology;;
+Incident Managment for Industrial Control Systems;Durgesh Kalya;Computer Science & Technology;;
+Microsoft Identity and Access Adminsitrator for SC-300 Exam Guide;Aaron Guilmette James Hardiman Dough Haven Dwayne Natwick;Computer Science & Technology;;
+Threat Modeling Best Practices;Derek Fisher;Computer Science & Technology;;
+Cloud Security Handbook, Second Edition;Eyal Estrin;Computer Science & Technology;;
+CISA – Certified Information Systems Auditor Study Guide;Hemang Doshi;Computer Science & Technology;;
+A Day in the Life of a CISO;David J. Gee;Computer Science & Technology;;
+Cybersecurity Kill Chain – Tactics and Strategies;Gourav Nagar and Shreyas Kumar;Computer Science & Technology;;
+Linux Shell Scripting for Hackers;Valentine G. Nachi Donald A. Tevault;Computer Science & Technology;;
+Python for Cybersecurity;Howard E. Poston III;Computer Science & Technology;;
+The Python Book;Rob Mastrodomenico;Computer Science & Technology;;
+Bite-Size Python;April Speight;Computer Science & Technology;;
+Unlocking Python;Ryan Mitchell;Computer Science & Technology;;
+Job Ready Python;Haythem Balti, Kimberly A. Weiss;Computer Science & Technology;;
+Teach yourself Visually Python;Guy Hart-Davis, Ted Hart-Davis;Computer Science & Technology;;
+Python Essentials for Dummies;Alan Simpson, John C. Shovic;Computer Science & Technology;;
+Machine Learning with Spark and Python;Michael Bowles;Computer Science & Technology;;
+Python for Data Science for Dummies;John Paul Mueller, Luca Massaron;Computer Science & Technology;;
+Beginning Programming with Python for Dummies;John Paul Mueller, Luca Massaron;Computer Science & Technology;;
+Machine Learning for Time Series Forcasting with Python;Francesca Lazzeri PhD;Computer Science & Technology;;
+Testing Python;David Sale;Computer Science & Technology;;
+Hands-On AI Trading with Python, QuantConnect and AWS;Ernest P. Chan, Jared Broad, Jiri Pik, Philip Sun, Vivek Singh;Computer Science & Technology;;
+Python All in One for Dummies;Alan Simpson, John C. Shovic;Computer Science & Technology;;
+Python Projects;Alan Gauld, Laura Cassell;Computer Science & Technology;;
+Visual Studio Code for Python Programmers;April Speight;Computer Science & Technology;;
+Professional Python;Luke Sneeringer;Computer Science & Technology;;
+Modern Computer Vision with PyTorch Second Edition;V Kishore Ayyadevara Yeshwanth Reddy;Computer Science & Technology;;
+Essential Guide to LLMOps;Ryan Doan;Computer Science & Technology;;
+Building LLM Powered Applications;Valentina Alto;Computer Science & Technology;;
+LLM Engineers Handbook;Maxime Labonne, Paul Iusztin;Computer Science & Technology;;
+Mastering NLP from Foundations to LLMs;Lior Gazit and Meysam Ghaffari;Computer Science & Technology;;
+Generative AI with Python and PyTorch, Second Edition;Joseph Babcock, Raghav Bali;Computer Science & Technology;;
+Machine Learning with PyTorch and Scikit-Learn;Sebastian Raschka Yuxi (Hayden) Liu Dr. Vahid Mirjalili;Computer Science & Technology;;
+LLM Design Patterns;Ken Huang;Computer Science & Technology;;
+Building Agentic AI Systems;Anjanava Biswas and Wrick Talukdar;Computer Science & Technology;;
+Generative AI Foundations in Python;Carlos Rodriguez;Computer Science & Technology;;
+Learn Python Programming;Fabrzio Romano Heinrich Kruger;Computer Science & Technology;;
+Practical Generative AI with ChatGPT Second Edition;Valentina Alto;Computer Science & Technology;;
+Unlocking Data with Generative AI and RAG;Keith Bourne;Computer Science & Technology;;
+Transformers for Natural Language Processing and Computer Vision Third Edition;Denis Rothman;Computer Science & Technology;;
+LLMs in Enterprise;Ahmed Menshawy Mahmoud Fahmy;Computer Science & Technology;;
+Building Data-Driven Applications with LlamaIndex;Andrei Gheorghiu;Computer Science & Technology;;
+SQL for Data Analytics;Saurabh Shrivastava Neelanjali Srivastav;Computer Science & Technology;;
+Building AI Applications with Open AI APIs;Martin Yanev;Computer Science & Technology;;
+RAG-Driven Generative AI;Denis Rothman;Computer Science & Technology;;
+Learn Model Context Protocol with Python;Christoffer Noring;Computer Science & Technology;;
+Azure OpenAI Essentials;Amit Mukherjee and Adithya Saladi;Computer Science & Technology;;
+Generative AI with LangChain Second Edition;Ben Auffarth & Leonid Kuligin;Computer Science & Technology;;
+Learn Model Context Protocol with TypeScript;Christoffer Noring;Computer Science & Technology;;
+The Lost Library of Cormanthyr: Forgotten Realms;Mel Odom;Fantasy;;
+Vipers Kiss: House of Serpents – Book II;Lisa Smedman;Fantasy;;House of Serpents
+Circle of Skulls: Ed Greenwood Presents Waterdeep;James P. Davis;Fantasy;;Ed Greenwood Presents Waterdeep
+The Spectral Blaze: A Forgotten Realms Novel;Richard Lee Byers;Fantasy;;
+Faces of Deception;Troy Denning;Fantasy;;
+The Magehound: Counselors & Kings, Book 1;Elaine Cunningham;Fantasy;;Counselors & Kings
+Prophet of the Dead: Forgotten Realms;Richard Lee Byers;Fantasy;;
+The Temptation of Elminister: Elminister, Book III;Ed Greenwood;Fantasy;;Elminister
+Annihilation: War of the Spider Queen – Book V;Philip Athans;Fantasy;;War of the Spider Queen
+The Wizardwar: Counselor & Kings, Book 3;Elaine Cunningham;Fantasy;;Counselors & Kings
+Avenger: Blades of the Moonsea – Book III;Richard Baker;Fantasy;;Blades of Moonsea
+Making of a Mage: Elminister, Book I;Ed Greenwood;Fantasy;;Elminister
+The Floodgate: Counselors & Kings, Book 2;Elaine Cunningham;Fantasy;;Counselors & Kings
+The Adversary;Erin M. Evans;Fantasy;;
+Resurrection: War of the Spider Queen – Book VI;Paul S. Kemp;Fantasy;;War of the Spider Queen
+Mistshore: Ed Greenwood Presents Waterdeep;Jaleigh Johnson;Fantasy;;Ed Greenwood Presents Waterdeep
+The Masked Witches: Brotherhood of the Griffon, Book IV;Richard Lee Byers;Fantasy;;Brotherhood of the Griffon
+Star of Cursrah: Forgotten Realms;Clayton Emery;Fantasy;;
+Condemnation: War of the Spider Queen – Book III;Richard Baker;Fantasy;;War of the Spider Queen
+Azure Bonds;Kate Novak;Fantasy;;
+The Captive Flame: Brotherhood of the Griffon, Book I;Richard Lee Byers;Fantasy;;Brotherhood of the Griffon
+Brimstone Angels: Lesser Evils: A Forgotten Realms Novel;Erin M. Evans;Fantasy;;
+City of the Dead: Ed Greenwood Presents Waterdeep;Rosemary Jones;Fantasy;;Ed Greenwood Presents Waterdeep
+Brimstone Angels;Erin M. Evans;Fantasy;;
+Elministers Daughter: Elminister Book V;Ed Greenwood;Fantasy;;Elminister
+The God Catcher: Ed Greenwood Presents Waterdeep;Erin M. Evans;Fantasy;;Ed Greenwood Presents Waterdeep
+Elminister in Hell: Elminister, Book IV;Ed Greenwood;Fantasy;;Elminister
+Whisper of Venom: Brotherhood of the Griffon, Book II;Richard Lee Byers;Fantasy;;Brotherhood of the Griffon
+Fire in the Blood;Erin M. Evans;Fantasy;;
+Vanitys Brood: House of Serpents – Book III;Lisa Smedman;Fantasy;;House of Serpents
+Venoms Taste: House of Serpents – Book I;Lisa Smedman;Fantasy;;House of Serpents
+Swordmage;Richard Baker;Fantasy;;
+Extinction: War of the Spider Queen – Book IV;Lisa Smedman;Fantasy;;War of the Spider Queen
+Corsair: Blades of the Moonsea – Book II;Richard Baker;Fantasy;;Blades of Moonsea
+The Wyverns Spur: The Finders Stone Trilogy, Book 2;Kate Novak and Jeff Grubb;Fantasy;;The Finders Stone Trilogy
+Insurrection: War of the Spider Queen – Book II;R.A. Salvatores Thomas M. Reid;Fantasy;;War of the Spider Queen
+Elminister in Myth Drannor: Elminister Book II;Ed Greenwood;Fantasy;;Elminister
+Blackstaff Tower: Ed Greenwood Presents Waterdeep;Steven E. Schend;Fantasy;;Ed Greenwood Presents Waterdeep
+Dissolution: War of the Spider Queen – Book I;Richard Lee Byers;Fantasy;;War of the Spider Queen
+Song of the Saurials: The Finders Stone Trilogy, Book 3;Kate Novak and Jeff Grubb;Fantasy;;The Finders Stone Trilogy
