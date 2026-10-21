@@ -24,7 +24,6 @@ SQLite database files, dependencies, secrets, and local backups are excluded fro
 ## Documentation
 
 - [Backend commands and setup](backend/README.md)
-- [Initial implementation report](backend/IMPLEMENTATION_REPORT.md)
 - [Importable Postman collection](backend/postman/SpaceSite.postman_collection.json)
 
 The backend regression tests use an in-memory database and temporary local HTTP ports. They do not modify the development database.
