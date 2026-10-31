@@ -320,6 +320,65 @@ main {
   color: #ffffff;
 }
 
+/* Reviews Section */
+.review-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-progress-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.rating-progress-row {
+  display: flex;
+  align-items: center;
+}
+
+.rating-progress-label {
+  width: 85px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.rating-progress-track {
+  flex-grow: 1;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.rating-progress-fill {
+  background-color: var(--primary-color);
+  height: 100%;
+  border-radius: 10px;
+}
+
+.rating-fill-5 { width: 75%; }
+.rating-fill-4 { width: 30%; }
+.rating-fill-3 { width: 10%; }
+.rating-fill-2 { width: 2%; }
+.rating-fill-1 { width: 2%; }
+
+.review-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.review-item:last-child {
+  border-bottom: none;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border-color);

@@ -162,8 +162,125 @@
         </button>
       </section>
 
-      <!-- Reviews section container (Increment 2) -->
+      <!-- Reviews section -->
       <section id="reviews-section" class="mb-5">
+        <h2 class="font-weight-bold mb-4">Bewertungen</h2>
+
+        <!-- Ratings overview and write review cards -->
+        <div class="row mb-5">
+          <!-- Rating distribution card -->
+          <div class="col-lg-5 col-md-6 mb-4">
+            <div class="review-card h-100">
+              <div class="d-flex align-items-baseline mb-4">
+                <span class="font-weight-bold display-4 mr-3">4,5</span>
+                <span class="text-muted">von 5 Sternen</span>
+              </div>
+
+              <!-- Rating progress bars -->
+              <div class="rating-progress-list">
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">5 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-5"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">4 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-4"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">3 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-3"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">2 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-2"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">1 Stern</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Write review card -->
+          <div class="col-lg-7 col-md-6 mb-4">
+            <div class="review-card h-100">
+              <h3 class="h5 font-weight-bold mb-3">Deine Bewertung schreiben</h3>
+              <form action="#" method="post">
+                <div class="form-group mb-3">
+                  <label for="review-rating" class="font-weight-bold">Sterne</label>
+                  <select class="form-control" id="review-rating" name="rating">
+                    <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; (5)</option>
+                    <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; (4)</option>
+                    <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; (3)</option>
+                    <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; (2)</option>
+                    <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; (1)</option>
+                  </select>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="review-text" class="font-weight-bold">Rezension</label>
+                  <textarea class="form-control" id="review-text" name="review" rows="4" placeholder="Was hat dir gefallen, was nicht?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-brand-dark px-4 py-2">Bewertung absenden</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Existing reviews list -->
+        <div class="reviews-list">
+          <!-- Review 1 -->
+          <div class="review-item">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <strong class="text-dark">buecherwurm_anna</strong>
+              <span class="text-muted small">12.10.2026</span>
+            </div>
+            <div class="text-dark mb-2">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-muted mb-0">
+              Beispielrezension: Sehr atmosphärisch erzählt, das Magiesystem wirkt durchdacht. Das Tempo ist ruhig, passt aber zur Geschichte.
+            </p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-item">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <strong class="text-dark">max_liest</strong>
+              <span class="text-muted small">03.10.2026</span>
+            </div>
+            <div class="text-dark mb-2">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="text-muted mb-0">
+              Beispielrezension: Starker Anfang, im Mittelteil etwas langatmig. Insgesamt trotzdem lesenswert.
+            </p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-item">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <strong class="text-dark">fantasy_fan_99</strong>
+              <span class="text-muted small">27.09.2026</span>
+            </div>
+            <div class="text-dark mb-2">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+            <p class="text-muted mb-0">
+              Beispielrezension: Schöne Sprache, mir fehlte aber ein klarerer Handlungsbogen.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   </main>
