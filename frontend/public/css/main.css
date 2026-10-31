@@ -173,6 +173,153 @@ main {
   color: #000000;
 }
 
+/* User Avatar & Dropdown */
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-menu-btn {
+  color: var(--text-main);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.user-menu-btn:hover,
+.user-menu-btn:focus {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Breadcrumb */
+.site-breadcrumb {
+  background-color: transparent;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.site-breadcrumb a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.site-breadcrumb a:hover {
+  color: var(--text-main);
+  text-decoration: underline;
+}
+
+.site-breadcrumb .breadcrumb-item.active {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* Book Cover Placeholder */
+.book-cover-placeholder {
+  background-color: #1e3a5f;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 1.75rem;
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-cover-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.book-cover-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.book-cover-author {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Genre Badges */
+.badge-genre-primary {
+  background-color: #e8eaff;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.badge-genre-secondary {
+  background-color: #f1f3f5;
+  color: #495057;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Metadata Grid */
+.metadata-grid {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.metadata-item .label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.metadata-item .value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Rating Score Display */
+.rating-score {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Add to Reading List CTA */
+.btn-add-reading-list {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+}
+
+.btn-add-reading-list:hover,
+.btn-add-reading-list:focus {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #ffffff;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border-color);

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeseForum - Der Name des Windes</title>
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header class="bg-white">
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <!-- Logo -->
+        <div class="col-auto">
+          <a href="#" class="brand-logo">LeseForum</a>
+        </div>
+
+        <!-- Search bar -->
+        <div class="col px-4">
+          <div class="header-search">
+            <svg class="header-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="form-control" placeholder="Suche nach Titel, Autor oder Genre">
+          </div>
+        </div>
+
+        <!-- User profile and reading list -->
+        <div class="col-auto d-flex align-items-center">
+          <!-- User dropdown menu -->
+          <div class="dropdown mr-3">
+            <button class="btn btn-link dropdown-toggle user-menu-btn d-flex align-items-center p-0 text-decoration-none" type="button" id="userMenuDropdown" data-toggle="dropdown">
+              <span class="user-avatar mr-2">L</span>
+              <span>leseratte42</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <h6 class="dropdown-header">Angemeldet als leseratte42</h6>
+              <a class="dropdown-item" href="#">Leseliste</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-danger" href="login-register.html">Abmelden</a>
+            </div>
+          </div>
+
+          <!-- Reading list button -->
+          <a href="#" class="btn btn-brand-dark d-inline-flex align-items-center">
+            <!-- Bookmark icon -->
+            <svg class="mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Leseliste
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category navigation -->
+    <nav class="nav-categories">
+      <div class="container">
+        <div class="d-flex justify-content-between py-2">
+          <a class="nav-link px-2" href="#">Alle Bücher</a>
+          <a class="nav-link px-2" href="#">Neuheiten</a>
+          <a class="nav-link px-2" href="#">Bestseller</a>
+          <a class="nav-link px-2 active font-weight-bold" href="#">Fantasy</a>
+          <a class="nav-link px-2" href="#">Krimi</a>
+          <a class="nav-link px-2" href="#">Sachbuch</a>
+          <a class="nav-link px-2" href="#">Romance</a>
+          <a class="nav-link px-2" href="#">Science-Fiction</a>
+          <a class="nav-link px-2" href="#">Klassiker</a>
+          <a class="nav-link px-2 nav-highlight" href="#">Top bewertet</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-4">
+    <div class="container">
+      <!-- Breadcrumb navigation -->
+      <nav>
+        <ol class="breadcrumb site-breadcrumb px-0">
+          <li class="breadcrumb-item"><a href="#">Alle Bücher</a></li>
+          <li class="breadcrumb-item"><a href="#">Fantasy</a></li>
+          <li class="breadcrumb-item active">Der Name des Windes</li>
+        </ol>
+      </nav>
+
+      <!-- Book detail overview -->
+      <section class="mb-4">
+        <div class="row">
+          <!-- Book cover placeholder column -->
+          <div class="col-md-4 col-lg-3 mb-4">
+            <div class="book-cover-placeholder">
+              <span class="book-cover-badge">COVER-PLATZHALTER</span>
+              <div class="book-cover-title">Der Name des Windes</div>
+              <div class="book-cover-author">Patrick Rothfuss</div>
+            </div>
+          </div>
+
+          <!-- Book metadata column -->
+          <div class="col-md-8 col-lg-9">
+            <!-- Genre badges -->
+            <div class="mb-3">
+              <span class="badge-genre-primary mr-2">Fantasy</span>
+              <span class="badge-genre-secondary">Roman</span>
+            </div>
+
+            <!-- Title and author -->
+            <h1 class="font-weight-bold mb-1">Der Name des Windes</h1>
+            <p class="text-muted mb-3">von Patrick Rothfuss</p>
+
+            <!-- Rating score and reviews link -->
+            <div class="d-flex align-items-center mb-4">
+              <span class="rating-score mr-2">&#9733; 4,5</span>
+              <span class="text-muted mr-3">Durchschnitt aus 128 Bewertungen (Beispielwert)</span>
+              <a href="#reviews-section" class="text-dark font-weight-bold">Zu den Bewertungen</a>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-4">
+              <h2 class="h5 font-weight-bold mb-2">Beschreibung</h2>
+              <p class="text-muted">
+                Kvothe gilt als Held, Gauner und Magier zugleich. Als Gastwirt erzählt er einem Chronisten, wie aus dem
+                Sohn fahrender Schauspieler ein Student an der Universität wurde und wie viel von den Geschichten über
+                ihn tatsächlich stimmt. (Platzhaltertext für den Prototyp.)
+              </p>
+            </div>
+
+            <!-- Metadata grid -->
+            <div class="metadata-grid">
+              <div class="row">
+                <div class="col-3 metadata-item">
+                  <div class="label">Genre</div>
+                  <div class="value">Fantasy</div>
+                </div>
+                <div class="col-3 metadata-item">
+                  <div class="label">Erschienen</div>
+                  <div class="value">2007</div>
+                </div>
+                <div class="col-3 metadata-item">
+                  <div class="label">Sprache</div>
+                  <div class="value">Deutsch</div>
+                </div>
+                <div class="col-3 metadata-item">
+                  <div class="label">Autor</div>
+                  <div class="value">Patrick Rothfuss</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add to reading list CTA banner -->
+      <section class="card border-0 shadow-sm p-3 mb-5">
+        <button id="btn-add-reading-list" class="btn btn-add-reading-list btn-block d-flex align-items-center justify-content-center">
+          <svg class="mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span id="reading-list-btn-text">Zur Leseliste hinzufügen</span>
+        </button>
+      </section>
+
+      <!-- Reviews section container (Increment 2) -->
+      <section id="reviews-section" class="mb-5">
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer py-3">
+    <div class="container text-center">
+      <span>&copy; 2026 LeseForum &middot; </span>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </footer>
+
+  <script src="vendor/js/jquery.min.js"></script>
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
