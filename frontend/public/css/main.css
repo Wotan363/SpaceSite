@@ -1,0 +1,59 @@
+/*
+  SpaceSite / LeseForum - Global Custom Styles
+  Complementing Bootstrap 4.6
+*/
+
+:root {
+  /* Primary brand colors - Used for active states, CTA buttons ('Konto erstellen', 'Zur Leseliste hinzufügen'), and rating bars */
+  --primary-color: #3b38e0;
+  --primary-hover: #2d2ab8;
+
+  /* Dark neutral colors - Used for secondary CTAs ('Anmelden', 'Leseliste', 'Bewertung absenden') */
+  --dark-btn-color: #1a1e24;
+  --dark-btn-hover: #0f1216;
+
+  /* Surface & Layout backgrounds - Used for full-page background */
+  --bg-page: #f8f9fa;
+
+  /* Typography colors - Main body text and secondary/muted labels */
+  --text-main: #212529;
+  --text-muted: #6c757d;
+
+  /* Borders & Dividers - Card outlines, input borders, horizontal rules */
+  --border-color: #e2e8f0;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom Primary Button matching Mockup */
+.btn-brand-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-brand-primary:hover,
+.btn-brand-primary:focus {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #ffffff;
+}
+
+/* Custom Dark Button matching Mockup */
+.btn-brand-dark {
+  background-color: var(--dark-btn-color);
+  border-color: var(--dark-btn-color);
+  color: #ffffff;
+}
+
+.btn-brand-dark:hover,
+.btn-brand-dark:focus {
+  background-color: var(--dark-btn-hover);
+  border-color: var(--dark-btn-hover);
+  color: #ffffff;
+}
