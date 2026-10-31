@@ -1,8 +1,3 @@
-/*
-  SpaceSite / LeseForum - Global Custom Styles
-  Complementing Bootstrap 4.6
-*/
-
 :root {
   /* Primary brand colors - Used for active states, CTA buttons ('Konto erstellen', 'Zur Leseliste hinzufügen'), and rating bars */
   --primary-color: #3b38e0;
@@ -15,7 +10,7 @@
   /* Surface & Layout backgrounds - Used for full-page background */
   --bg-page: #f8f9fa;
 
-  /* Typography colors - Main body text and secondary/muted labels */
+  /* Typography colors - Main body text and secondary labels */
   --text-main: #212529;
   --text-muted: #6c757d;
 
@@ -28,13 +23,100 @@ body {
   color: var(--text-main);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Custom Primary Button matching Mockup */
+main {
+  flex: 1 0 auto;
+}
+
+/* Brand Logo */
+.brand-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.brand-logo:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Header Search Input */
+.header-search {
+  position: relative;
+}
+
+.header-search .form-control {
+  background-color: #f1f3f5;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding-left: 2.75rem;
+  height: calc(1.5em + 1.2rem + 2px);
+}
+
+.header-search .form-control:focus {
+  background-color: #ffffff;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(59, 56, 224, 0.15);
+}
+
+.header-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Category Navigation */
+.nav-categories {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-categories .nav-link {
+  color: #1a1e24;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 0.65rem;
+}
+
+.nav-categories .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-categories .nav-link.nav-highlight {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Custom Buttons */
+.btn-brand-dark {
+  background-color: var(--dark-btn-color);
+  border-color: var(--dark-btn-color);
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-brand-dark:hover,
+.btn-brand-dark:focus {
+  background-color: var(--dark-btn-hover);
+  border-color: var(--dark-btn-hover);
+  color: #ffffff;
+}
+
 .btn-brand-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
 .btn-brand-primary:hover,
@@ -44,16 +126,40 @@ body {
   color: #ffffff;
 }
 
-/* Custom Dark Button matching Mockup */
-.btn-brand-dark {
-  background-color: var(--dark-btn-color);
-  border-color: var(--dark-btn-color);
-  color: #ffffff;
+/* Auth Form Cards */
+.auth-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2.25rem;
 }
 
-.btn-brand-dark:hover,
-.btn-brand-dark:focus {
-  background-color: var(--dark-btn-hover);
-  border-color: var(--dark-btn-hover);
-  color: #ffffff;
+.auth-card .form-control {
+  border-color: var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  height: auto;
+}
+
+.auth-card .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(59, 56, 224, 0.15);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  background-color: #ffffff;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-top: auto;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: var(--text-main);
 }
