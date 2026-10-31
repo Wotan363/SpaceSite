@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeseForum - Der Name des Windes (Gast)</title>
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header class="bg-white">
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <!-- Logo -->
+        <div class="col-auto">
+          <a href="#" class="brand-logo">LeseForum</a>
+        </div>
+
+        <!-- Search bar -->
+        <div class="col px-4">
+          <div class="header-search">
+            <svg class="header-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="form-control" placeholder="Suche nach Titel, Autor oder Genre">
+          </div>
+        </div>
+
+        <!-- Guest action buttons -->
+        <div class="col-auto d-flex align-items-center">
+          <a href="login-register.html" class="btn btn-brand-primary mr-3">Anmelden</a>
+          <a href="login-register.html" class="btn btn-brand-dark d-inline-flex align-items-center">
+            <!-- Bookmark icon -->
+            <svg class="mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Leseliste
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category navigation -->
+    <nav class="nav-categories">
+      <div class="container">
+        <div class="d-flex justify-content-between py-2">
+          <a class="nav-link px-2" href="#">Alle Bücher</a>
+          <a class="nav-link px-2" href="#">Neuheiten</a>
+          <a class="nav-link px-2" href="#">Bestseller</a>
+          <a class="nav-link px-2 active font-weight-bold" href="#">Fantasy</a>
+          <a class="nav-link px-2" href="#">Krimi</a>
+          <a class="nav-link px-2" href="#">Sachbuch</a>
+          <a class="nav-link px-2" href="#">Romance</a>
+          <a class="nav-link px-2" href="#">Science-Fiction</a>
+          <a class="nav-link px-2" href="#">Klassiker</a>
+          <a class="nav-link px-2 nav-highlight" href="#">Top bewertet</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-4">
+    <div class="container">
+      <!-- Breadcrumb navigation -->
+      <nav>
+        <ol class="breadcrumb site-breadcrumb px-0">
+          <li class="breadcrumb-item"><a href="#">Alle Bücher</a></li>
+          <li class="breadcrumb-item"><a href="#">Fantasy</a></li>
+          <li class="breadcrumb-item active">Der Name des Windes</li>
+        </ol>
+      </nav>
+
+      <!-- Book detail overview -->
+      <section class="mb-4">
+        <div class="row">
+          <!-- Book cover placeholder column -->
+          <div class="col-md-4 col-lg-3 mb-4">
+            <div class="book-cover-placeholder">
+              <span class="book-cover-badge">COVER-PLATZHALTER</span>
+              <div class="book-cover-title">Der Name des Windes</div>
+              <div class="book-cover-author">Patrick Rothfuss</div>
+            </div>
+          </div>
+
+          <!-- Book metadata column -->
+          <div class="col-md-8 col-lg-9">
+            <!-- Genre badges -->
+            <div class="mb-3">
+              <span class="badge-genre-primary mr-2">Fantasy</span>
+              <span class="badge-genre-secondary">Roman</span>
+            </div>
+
+            <!-- Title and author -->
+            <h1 class="font-weight-bold mb-1">Der Name des Windes</h1>
+            <p class="text-muted mb-3">von Patrick Rothfuss</p>
+
+            <!-- Rating score and reviews link -->
+            <div class="d-flex align-items-center mb-4">
+              <span class="rating-score mr-2">&#9733; 4,5</span>
+              <span class="text-muted mr-3">Durchschnitt aus 128 Bewertungen (Beispielwert)</span>
+              <a href="#reviews-section" class="text-dark font-weight-bold">Zu den Bewertungen</a>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-4">
+              <h2 class="h5 font-weight-bold mb-2">Beschreibung</h2>
+              <p class="text-muted">
+                Kvothe gilt als Held, Gauner und Magier zugleich. Als Gastwirt erzählt er einem Chronisten, wie aus dem
+                Sohn fahrender Schauspieler ein Student an der Universität wurde und wie viel von den Geschichten über
+                ihn tatsächlich stimmt. (Platzhaltertext für den Prototyp.)
+              </p>
+            </div>
+
+            <!-- Metadata grid -->
+            <div class="metadata-grid">
+              <div class="row">
+                <div class="col-3 metadata-item">
+                  <div class="label">Genre</div>
+                  <div class="value">Fantasy</div>
+                </div>
+                <div class="col-3 metadata-item">
+                  <div class="label">Erschienen</div>
+                  <div class="value">2007</div>
+                </div>
+                <div class="col-3 metadata-item">
+                  <div class="label">Sprache</div>
+                  <div class="value">Deutsch</div>
+                </div>
+                <div class="col-3 metadata-item">
+                  <div class="label">Autor</div>
+                  <div class="value">Patrick Rothfuss</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add to reading list CTA banner (Guest prompt to login) -->
+      <section class="card border-0 shadow-sm p-3 mb-5">
+        <a href="login-register.html" class="btn btn-add-reading-list btn-block d-flex align-items-center justify-content-center">
+          <svg class="mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>Zur Leseliste hinzufügen</span>
+        </a>
+      </section>
+
+      <!-- Reviews section -->
+      <section id="reviews-section" class="mb-5">
+        <h2 class="font-weight-bold mb-4">Bewertungen</h2>
+
+        <!-- Ratings overview and write review cards -->
+        <div class="row mb-5">
+          <!-- Rating distribution card -->
+          <div class="col-lg-5 col-md-6 mb-4">
+            <div class="review-card h-100">
+              <div class="d-flex align-items-baseline mb-4">
+                <span class="font-weight-bold display-4 mr-3">4,5</span>
+                <span class="text-muted">von 5 Sternen</span>
+              </div>
+
+              <!-- Rating progress bars -->
+              <div class="rating-progress-list">
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">5 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-5"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">4 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-4"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">3 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-3"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">2 Sterne</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-2"></div>
+                  </div>
+                </div>
+
+                <div class="rating-progress-row">
+                  <div class="rating-progress-label">1 Stern</div>
+                  <div class="rating-progress-track">
+                    <div class="rating-progress-fill rating-fill-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guest write review login prompt card -->
+          <div class="col-lg-7 col-md-6 mb-4">
+            <div class="review-card h-100 text-center d-flex flex-column justify-content-center align-items-center py-5">
+              <h3 class="h5 font-weight-bold mb-3">Deine Bewertung schreiben</h3>
+              <p class="text-muted mb-4">
+                Möchtest du dieses Buch bewerten? Melde dich an, um eine Rezension und Sterne zu vergeben.
+              </p>
+              <a href="login-register.html" class="btn btn-brand-primary px-4 py-2">Anmelden</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Existing reviews list -->
+        <div class="reviews-list">
+          <!-- Review 1 -->
+          <div class="review-item">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <strong class="text-dark">buecherwurm_anna</strong>
+              <span class="text-muted small">12.10.2026</span>
+            </div>
+            <div class="text-dark mb-2">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-muted mb-0">
+              Beispielrezension: Sehr atmosphärisch erzählt, das Magiesystem wirkt durchdacht. Das Tempo ist ruhig, passt aber zur Geschichte.
+            </p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-item">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <strong class="text-dark">max_liest</strong>
+              <span class="text-muted small">03.10.2026</span>
+            </div>
+            <div class="text-dark mb-2">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="text-muted mb-0">
+              Beispielrezension: Starker Anfang, im Mittelteil etwas langatmig. Insgesamt trotzdem lesenswert.
+            </p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-item">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <strong class="text-dark">fantasy_fan_99</strong>
+              <span class="text-muted small">27.09.2026</span>
+            </div>
+            <div class="text-dark mb-2">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+            <p class="text-muted mb-0">
+              Beispielrezension: Schöne Sprache, mir fehlte aber ein klarerer Handlungsbogen.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer py-3">
+    <div class="container text-center">
+      <span>&copy; 2026 LeseForum &middot; </span>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </footer>
+
+  <script src="vendor/js/jquery.min.js"></script>
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

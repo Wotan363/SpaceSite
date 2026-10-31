@@ -311,6 +311,7 @@ main {
   border-radius: 8px;
   font-weight: 600;
   padding: 0.85rem 1.5rem;
+  text-decoration: none;
 }
 
 .btn-add-reading-list:hover,
@@ -318,6 +319,26 @@ main {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
   color: #ffffff;
+  text-decoration: none;
+}
+
+/* Added to Reading List State */
+.btn-in-reading-list {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+  text-decoration: none;
+}
+
+.btn-in-reading-list:hover,
+.btn-in-reading-list:focus {
+  background-color: #5a6268;
+  border-color: #545b62;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* Reviews Section */
