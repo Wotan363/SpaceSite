@@ -34,4 +34,6 @@ Nach dem Starten des Servers können folgende Ansichten im Browser aufgerufen we
 - **Buch-Einzelansicht (Eingeloggt)**: `http://localhost:3000/book-detail.html`
 - **Buch-Einzelansicht (In Leseliste)**: `http://localhost:3000/book-detail-added.html`
 - **Buch-Einzelansicht (Gast)**: `http://localhost:3000/book-detail-guest.html`
+- **Landing Page (Katalog)**: `http://localhost:3000/index.html`
+- **Leseliste**: `http://localhost:3000/reading-list.html`
 - **Impressum**: `http://localhost:3000/impressum.html`
