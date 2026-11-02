@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeseForum - Meine Leseliste</title>
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/covers.css">
+  <link rel="stylesheet" href="css/reading-list.css">
+</head>
+<body>
+
+  <header class="bg-white">
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <!-- Logo, führt zurück zur Startseite -->
+        <div class="col-auto">
+          <a href="index.html" class="brand-logo">LeseForum</a>
+        </div>
+
+        <!-- Suchfeld -->
+        <div class="col px-4">
+          <div class="header-search">
+            <svg class="header-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="form-control" placeholder="Suche nach Titel, Autor oder Genre" aria-label="Suche nach Titel, Autor oder Genre">
+          </div>
+        </div>
+
+        <!-- Angemeldeter Benutzer und Leseliste -->
+        <div class="col-auto d-flex align-items-center">
+          <!-- Benutzermenü, klappt per Bootstrap auf -->
+          <div class="dropdown mr-3">
+            <button class="btn btn-link dropdown-toggle user-menu-btn d-flex align-items-center p-0 text-decoration-none" type="button" data-toggle="dropdown">
+              <span class="user-avatar mr-2">L</span>
+              <span>leseratte42</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <h6 class="dropdown-header">Angemeldet als leseratte42</h6>
+              <a class="dropdown-item" href="reading-list.html">Leseliste</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-danger" href="index.html">Abmelden</a>
+            </div>
+          </div>
+
+          <!-- Button zur Leseliste, hier blau weil wir schon drauf sind -->
+          <a href="reading-list.html" class="btn btn-brand-primary d-inline-flex align-items-center">
+            <!-- Lesezeichen-Symbol -->
+            <svg class="mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Leseliste
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kategorie-Leiste. Außer "Alle Bücher" noch ohne Ziel -->
+    <nav class="nav-categories">
+      <div class="container">
+        <div class="d-flex justify-content-between py-2">
+          <a class="nav-link px-2" href="index.html">Alle Bücher</a>
+          <a class="nav-link px-2" href="#">Neuheiten</a>
+          <a class="nav-link px-2" href="#">Bestseller</a>
+          <a class="nav-link px-2" href="#">Fantasy</a>
+          <a class="nav-link px-2" href="#">Krimi</a>
+          <a class="nav-link px-2" href="#">Sachbuch</a>
+          <a class="nav-link px-2" href="#">Romance</a>
+          <a class="nav-link px-2" href="#">Science-Fiction</a>
+          <a class="nav-link px-2" href="#">Klassiker</a>
+          <a class="nav-link px-2 nav-highlight" href="#">Top bewertet</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-4">
+    <div class="container">
+      <h1 class="reading-list-title mb-4">Meine Leseliste</h1>
+
+      <!-- Umschalter: Alle / Ungelesen / Gelesen -->
+      <nav aria-label="Leseliste filtern">
+        <ul class="nav list-tabs mb-3">
+          <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Alle (7)</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ungelesen (5)</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gelesen (2)</a></li>
+        </ul>
+      </nav>
+
+      <!-- Die einzelnen Bücher in der Liste -->
+      <article class="reading-item">
+        <div class="mini-cover cover-ringe">Der Herr der Ringe</div>
+        <div class="flex-grow-1">
+          <h2 class="reading-item-title"><a href="book-detail.html">Der Herr der Ringe</a></h2>
+          <div class="reading-item-author">J.R.R. Tolkien</div>
+          <div class="mt-1">
+            <span class="status-badge status-unread">Ungelesen</span>
+            <span class="reading-item-info">Noch nicht bewertet</span>
+          </div>
+        </div>
+        <div class="reading-item-actions d-flex align-items-center">
+          <select class="custom-select custom-select-sm mr-2" aria-label="Status ändern">
+            <option selected disabled>Status ändern</option>
+            <option>Ungelesen</option>
+            <option>Gelesen</option>
+          </select>
+          <button type="button" class="btn btn-remove">Entfernen</button>
+        </div>
+      </article>
+
+      <article class="reading-item">
+        <div class="mini-cover cover-sapiens">Sapiens</div>
+        <div class="flex-grow-1">
+          <h2 class="reading-item-title"><a href="book-detail.html">Sapiens</a></h2>
+          <div class="reading-item-author">Yuval Noah Harari</div>
+          <div class="mt-1">
+            <span class="status-badge status-unread">Ungelesen</span>
+            <span class="reading-item-info">Noch nicht bewertet</span>
+          </div>
+        </div>
+        <div class="reading-item-actions d-flex align-items-center">
+          <select class="custom-select custom-select-sm mr-2" aria-label="Status ändern">
+            <option selected disabled>Status ändern</option>
+            <option>Ungelesen</option>
+            <option>Gelesen</option>
+          </select>
+          <button type="button" class="btn btn-remove">Entfernen</button>
+        </div>
+      </article>
+
+      <article class="reading-item">
+        <div class="mini-cover cover-habits">Atomic Habits</div>
+        <div class="flex-grow-1">
+          <h2 class="reading-item-title"><a href="book-detail.html">Atomic Habits</a></h2>
+          <div class="reading-item-author">James Clear</div>
+          <div class="mt-1">
+            <span class="status-badge status-unread">Ungelesen</span>
+            <span class="reading-item-info">Noch nicht bewertet</span>
+          </div>
+        </div>
+        <div class="reading-item-actions d-flex align-items-center">
+          <select class="custom-select custom-select-sm mr-2" aria-label="Status ändern">
+            <option selected disabled>Status ändern</option>
+            <option>Ungelesen</option>
+            <option>Gelesen</option>
+          </select>
+          <button type="button" class="btn btn-remove">Entfernen</button>
+        </div>
+      </article>
+
+      <article class="reading-item">
+        <div class="mini-cover cover-sakrileg">Sakrileg</div>
+        <div class="flex-grow-1">
+          <h2 class="reading-item-title"><a href="book-detail.html">Sakrileg</a></h2>
+          <div class="reading-item-author">Dan Brown</div>
+          <div class="mt-1">
+            <span class="status-badge status-unread">Ungelesen</span>
+            <span class="reading-item-info">Noch nicht bewertet</span>
+          </div>
+        </div>
+        <div class="reading-item-actions d-flex align-items-center">
+          <select class="custom-select custom-select-sm mr-2" aria-label="Status ändern">
+            <option selected disabled>Status ändern</option>
+            <option>Ungelesen</option>
+            <option>Gelesen</option>
+          </select>
+          <button type="button" class="btn btn-remove">Entfernen</button>
+        </div>
+      </article>
+
+      <article class="reading-item">
+        <div class="mini-cover cover-stolz">Stolz und Vorurteil</div>
+        <div class="flex-grow-1">
+          <h2 class="reading-item-title"><a href="book-detail.html">Stolz und Vorurteil</a></h2>
+          <div class="reading-item-author">Jane Austen</div>
+          <div class="mt-1">
+            <span class="status-badge status-unread">Ungelesen</span>
+            <span class="reading-item-info">Noch nicht bewertet</span>
+          </div>
+        </div>
+        <div class="reading-item-actions d-flex align-items-center">
+          <select class="custom-select custom-select-sm mr-2" aria-label="Status ändern">
+            <option selected disabled>Status ändern</option>
+            <option>Ungelesen</option>
+            <option>Gelesen</option>
+          </select>
+          <button type="button" class="btn btn-remove">Entfernen</button>
+        </div>
+      </article>
+
+      <article class="reading-item">
+        <div class="mini-cover cover-dune">Dune</div>
+        <div class="flex-grow-1">
+          <h2 class="reading-item-title"><a href="book-detail.html">Dune</a></h2>
+          <div class="reading-item-author">Frank Herbert</div>
+          <div class="mt-1">
+            <span class="status-badge status-read">Gelesen</span>
+            <span class="reading-item-info">Meine Bewertung: &#9733; 5</span>
+          </div>
+        </div>
+        <div class="reading-item-actions d-flex align-items-center">
+          <select class="custom-select custom-select-sm mr-2" aria-label="Status ändern">
+            <option selected disabled>Status ändern</option>
+            <option>Ungelesen</option>
+            <option>Gelesen</option>
+          </select>
+          <button type="button" class="btn btn-remove">Entfernen</button>
+        </div>
+      </article>
+
+      <article class="reading-item">
+        <div class="mini-cover cover-parfum">Das Parfum</div>
+        <div class="flex-grow-1">
+          <h2 class="reading-item-title"><a href="book-detail.html">Das Parfum</a></h2>
+          <div class="reading-item-author">Patrick Süskind</div>
+          <div class="mt-1">
+            <span class="status-badge status-read">Gelesen</span>
+            <span class="reading-item-info">Meine Bewertung: &#9733; 4</span>
+          </div>
+        </div>
+        <div class="reading-item-actions d-flex align-items-center">
+          <select class="custom-select custom-select-sm mr-2" aria-label="Status ändern">
+            <option selected disabled>Status ändern</option>
+            <option>Ungelesen</option>
+            <option>Gelesen</option>
+          </select>
+          <button type="button" class="btn btn-remove">Entfernen</button>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Fußzeile -->
+  <footer class="site-footer py-3">
+    <div class="container text-center">
+      <span>&copy; 2026 LeseForum &middot; </span>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </footer>
+
+  <script src="vendor/js/jquery.min.js"></script>
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

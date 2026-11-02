@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeseForum - Alle Bücher</title>
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/covers.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+  <header class="bg-white">
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <!-- Logo, führt zurück zur Startseite -->
+        <div class="col-auto">
+          <a href="index.html" class="brand-logo">LeseForum</a>
+        </div>
+
+        <!-- Suchfeld -->
+        <div class="col px-4">
+          <div class="header-search">
+            <svg class="header-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="form-control" placeholder="Suche nach Titel, Autor oder Genre" aria-label="Suche nach Titel, Autor oder Genre">
+          </div>
+        </div>
+
+        <!-- Buttons für Besucher, die nicht angemeldet sind -->
+        <div class="col-auto d-flex align-items-center">
+          <a href="login-register.html" class="btn btn-brand-outline mr-3">Anmelden</a>
+          <a href="login-register.html" class="btn btn-brand-dark d-inline-flex align-items-center">
+            <!-- Lesezeichen-Symbol -->
+            <svg class="mr-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Leseliste
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Schwarzer Balken mit den zwei Hinweisen -->
+    <div class="info-bar">
+      <div class="container d-flex justify-content-between py-2">
+        <span>Bewertungen &amp; Rezensionen lesen</span>
+        <span>Bücher auf der Leseliste merken</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Filter. Tut im Prototyp noch nichts, wird in Abgabe 3 dynamisch -->
+        <aside class="col-lg-3 mb-4">
+          <div class="filter-card">
+            <div class="filter-title">Filter</div>
+
+            <div class="mb-4">
+              <div class="filter-group-title">Genre</div>
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="genre-fantasy" checked>
+                <label class="custom-control-label" for="genre-fantasy">Fantasy</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="genre-science-fiction" checked>
+                <label class="custom-control-label" for="genre-science-fiction">Science-Fiction</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="genre-krimi-thriller">
+                <label class="custom-control-label" for="genre-krimi-thriller">Krimi &amp; Thriller</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="genre-romance">
+                <label class="custom-control-label" for="genre-romance">Romance</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="genre-sachbuch">
+                <label class="custom-control-label" for="genre-sachbuch">Sachbuch</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="genre-klassiker">
+                <label class="custom-control-label" for="genre-klassiker">Klassiker</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="genre-humor">
+                <label class="custom-control-label" for="genre-humor">Humor</label>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="filter-group-title">Bewertung</div>
+              <div class="custom-control custom-radio mb-2">
+                <input type="radio" class="custom-control-input" id="rating-4" name="rating">
+                <label class="custom-control-label" for="rating-4">ab 4 Sternen</label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input type="radio" class="custom-control-input" id="rating-3" name="rating">
+                <label class="custom-control-label" for="rating-3">ab 3 Sternen</label>
+              </div>
+              <div class="custom-control custom-radio mb-2">
+                <input type="radio" class="custom-control-input" id="rating-all" name="rating" checked>
+                <label class="custom-control-label" for="rating-all">Alle</label>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="filter-group-title">Erscheinungsjahr</div>
+              <div class="form-row">
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="von" aria-label="Erscheinungsjahr von">
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="bis" aria-label="Erscheinungsjahr bis">
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-brand-primary btn-block">Filter anwenden</button>
+            <div class="text-center mt-3">
+              <a href="#" class="filter-reset">Zurücksetzen</a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Rechte Spalte mit den Büchern -->
+        <section class="col-lg-9">
+          <div class="d-flex justify-content-between align-items-end mb-4">
+            <div>
+              <h1 class="catalog-title">Alle Bücher</h1>
+              <small class="text-muted">12 Bücher angezeigt</small>
+            </div>
+            <div class="d-flex align-items-center">
+              <label for="sort" class="text-muted small mb-0 mr-2">Sortieren nach</label>
+              <select id="sort" class="custom-select sort-select">
+                <option selected>Beliebtheit</option>
+                <option>Beste Bewertung</option>
+                <option>Erscheinungsjahr</option>
+                <option>Titel A&ndash;Z</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Die 12 Buchkarten, Daten sind fest eingetragen -->
+          <div class="row">
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-windes">
+                  <span class="book-cover-name">Der Name des Windes</span>
+                  <span class="book-cover-writer">Patrick Rothfuss</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Fantasy</span>
+                  <span class="rating">&#9733; 4,5</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-dune">
+                  <span class="book-cover-name">Dune</span>
+                  <span class="book-cover-writer">Frank Herbert</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Science-Fiction</span>
+                  <span class="rating">&#9733; 4,3</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-sapiens">
+                  <span class="book-cover-name">Sapiens</span>
+                  <span class="book-cover-writer">Yuval Noah Harari</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Sachbuch</span>
+                  <span class="rating">&#9733; 4,4</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-ringe">
+                  <span class="book-cover-name">Der Herr der Ringe</span>
+                  <span class="book-cover-writer">J.R.R. Tolkien</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Fantasy</span>
+                  <span class="rating">&#9733; 4,7</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-parfum">
+                  <span class="book-cover-name">Das Parfum</span>
+                  <span class="book-cover-writer">Patrick Süskind</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Klassiker</span>
+                  <span class="rating">&#9733; 4,2</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-sakrileg">
+                  <span class="book-cover-name">Sakrileg</span>
+                  <span class="book-cover-writer">Dan Brown</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Krimi</span>
+                  <span class="rating">&#9733; 3,8</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-schwarm">
+                  <span class="book-cover-name">Der Schwarm</span>
+                  <span class="book-cover-writer">Frank Schätzing</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Thriller</span>
+                  <span class="rating">&#9733; 4,0</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-kaenguru">
+                  <span class="book-cover-name">Die Känguru-Chroniken</span>
+                  <span class="book-cover-writer">Marc-Uwe Kling</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Humor</span>
+                  <span class="rating">&#9733; 4,4</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-stolz">
+                  <span class="book-cover-name">Stolz und Vorurteil</span>
+                  <span class="book-cover-writer">Jane Austen</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Romance</span>
+                  <span class="rating">&#9733; 4,3</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-habits">
+                  <span class="book-cover-name">Atomic Habits</span>
+                  <span class="book-cover-writer">James Clear</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Sachbuch</span>
+                  <span class="rating">&#9733; 4,3</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-verwandlung">
+                  <span class="book-cover-name">Die Verwandlung</span>
+                  <span class="book-cover-writer">Franz Kafka</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Klassiker</span>
+                  <span class="rating">&#9733; 4,0</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3 mb-4">
+              <a href="book-detail-guest.html" class="book-card">
+                <div class="book-cover cover-feuer">
+                  <span class="book-cover-name">Kleine Feuer überall</span>
+                  <span class="book-cover-writer">Celeste Ng</span>
+                </div>
+                <div class="book-card-meta">
+                  <span>Roman</span>
+                  <span class="rating">&#9733; 4,1</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Seitenzahlen, noch ohne Funktion -->
+          <nav aria-label="Seitenwahl" class="mt-3">
+            <ul class="pagination justify-content-center">
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#" aria-label="Weiter">&rsaquo;</a></li>
+            </ul>
+          </nav>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Fußzeile -->
+  <footer class="site-footer py-3">
+    <div class="container text-center">
+      <span>&copy; 2026 LeseForum &middot; </span>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </footer>
+
+  <script src="vendor/js/jquery.min.js"></script>
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* Farben für die Buch-Platzhalter. Wird von index.html und reading-list.html genutzt */
+
+.cover-windes { background-color: #1e3a5f; }
+.cover-dune { background-color: #8a5a12; }
+.cover-sapiens { background-color: #2f5d50; }
+.cover-ringe { background-color: #4a3f73; }
+.cover-parfum { background-color: #7a2e3b; }
+.cover-sakrileg { background-color: #264653; }
+.cover-schwarm { background-color: #0d5560; }
+.cover-kaenguru { background-color: #6b2d5c; }
+.cover-stolz { background-color: #7a4a38; }
+.cover-habits { background-color: #3d4059; }
+.cover-verwandlung { background-color: #1d4533; }
+.cover-feuer { background-color: #5c1040; }
