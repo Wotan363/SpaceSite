@@ -1,0 +1,172 @@
+/* Styles nur für die Startseite. Basis-Styles stehen in main.css */
+
+/* Anmelden-Button: weiß mit dunklem Rand */
+.btn-brand-outline {
+  background-color: #ffffff;
+  border: 1px solid var(--dark-btn-color);
+  color: var(--dark-btn-color);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-brand-outline:hover,
+.btn-brand-outline:focus {
+  background-color: var(--dark-btn-color);
+  border-color: var(--dark-btn-color);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Dunkler Balken unter dem Header */
+.info-bar {
+  background-color: var(--dark-btn-color);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Filter-Box links */
+.filter-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.filter-card .filter-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.filter-card .filter-group-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.filter-card .custom-control-label {
+  font-size: 0.9rem;
+}
+
+.filter-card .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.filter-card .form-control {
+  border-color: var(--border-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.filter-card .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(59, 56, 224, 0.15);
+}
+
+.filter-card .btn {
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+}
+
+.filter-reset {
+  color: #495057;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.filter-reset:hover {
+  color: #000000;
+}
+
+/* Überschrift und Sortier-Auswahl */
+.catalog-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 0;
+}
+
+.sort-select {
+  width: auto;
+  border-color: var(--border-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Buchkarten. Die Cover sind nur farbige Flächen, keine echten Bilder */
+.book-card {
+  display: block;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.book-card:hover {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.book-card:hover .book-cover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* 2:3 ist das übliche Buchformat, min-height als Rückfall für alte Browser */
+.book-cover {
+  aspect-ratio: 2 / 3;
+  min-height: 200px;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.book-cover-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.book-cover-writer {
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.book-card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.book-card-meta .rating {
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Seitenzahlen unter dem Raster */
+.pagination .page-link {
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 0 0.2rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--dark-btn-color);
+  border-color: var(--dark-btn-color);
+  color: #ffffff;
+}
+
+.pagination .page-link:focus {
+  box-shadow: 0 0 0 0.2rem rgba(59, 56, 224, 0.15);
+}

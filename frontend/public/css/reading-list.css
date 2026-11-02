@@ -1,0 +1,132 @@
+/* Styles nur für die Leseliste. Basis-Styles stehen in main.css */
+
+.reading-list-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* Umschalter oben: Alle / Ungelesen / Gelesen */
+.list-tabs .nav-link {
+  color: var(--text-main);
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 50rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.list-tabs .nav-link:hover {
+  border-color: var(--dark-btn-color);
+  text-decoration: none;
+}
+
+.list-tabs .nav-link.active {
+  background-color: var(--dark-btn-color);
+  border-color: var(--dark-btn-color);
+  color: #ffffff;
+}
+
+/* Eine Zeile pro Buch */
+.reading-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+/* 52x78px, damit es ungefähr wie ein Buchrücken aussieht */
+.mini-cover {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 78px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  padding: 0.3rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.reading-item-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reading-item-title a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.reading-item-title a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.reading-item-author {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.reading-item-info {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Farbige Markierung für Ungelesen / Gelesen */
+.status-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+}
+
+.status-unread { background-color: #f1f3f5; color: #495057; }
+.status-read { background-color: #d8f3e3; color: #1b5e3a; }
+
+/* Auswahlfeld und Entfernen-Button rechts in der Zeile */
+.reading-item .custom-select {
+  width: 150px;
+  border-color: var(--border-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-remove {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  color: #8b1a1a;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.9rem;
+}
+
+.btn-remove:hover,
+.btn-remove:focus {
+  background-color: #fdf0f0;
+  border-color: #e6b8b8;
+  color: #8b1a1a;
+}
+
+/* ab 576px wird es zu eng, deshalb rutschen die Buttons dann unter den Text */
+@media (max-width: 575.98px) {
+  .reading-item {
+    flex-wrap: wrap;
+  }
+
+  .reading-item-actions {
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+}
